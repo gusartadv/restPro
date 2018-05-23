@@ -30,7 +30,7 @@ namespace WebApplication2.Controllers
 
             string[] x;
             string des = string.Empty;
-            x = xp.Split("|");
+            x = xp.Split("-");
 
             des = x[2];
             ServiceReference1.PagosInerfaceClient pago = new ServiceReference1.PagosInerfaceClient();
@@ -78,7 +78,7 @@ namespace WebApplication2.Controllers
 
             }
 
-            return mensaje + "|" + factura;
+            return mensaje + "-" + factura;
         }
 
         // POST api/values
